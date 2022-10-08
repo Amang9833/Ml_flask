@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}"> -->
+</head>
+<body>
+    <h2>Predictions</h2>
+    <p>Enter yr data</p>
+    <form action="/" method="POST">
+        <input type="number" step="any" name="aIncome" placeholder="Avg. Area Income">
+        <input type="number" step="any" name="hAge" placeholder="Avg. Area House Age">
+        <input type="number" step="any" name="nRooms" placeholder="Avg. Area Number of Rooms">
+        <input type="number" step="any" name="nBedrooms" placeholder="Avg. Area Number of Bedrooms">
+        <input type="number" step="any" name="aPopulation" placeholder="Area Population">
+        <input type="submit" value="submit">
+    </form>
+<p>itna bharna h : {{ pred }}</p>
+</body>
+</html>
